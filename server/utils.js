@@ -159,6 +159,11 @@ exports.updatePhases = function() {
         }
 
         var savePhase = function(pphase, data, i) {
+          if(data.length == 0) {
+            console.log("CRAP");
+            return;
+          }
+
           console.log(new Date());
           data[i].isCurrent = (data[i].from <= (new Date()) && data[i].to >= (new Date()));
           if(pphase && data[i].id !== pphase.id && data[i].isCurrent) {
