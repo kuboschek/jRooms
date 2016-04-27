@@ -29,10 +29,10 @@ var all = {
 
   // Number of students that can be allocated to the college
   collegeCapacity: {
-    c3: 248,
-    krupp: 186,
-    nordmetall: 190,
-    mercator: 187
+    c3: 222,
+    krupp: 170,
+    nordmetall: 164,
+    mercator: 170
   },
 
   // Boundary percentages for colleges
